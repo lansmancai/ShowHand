@@ -687,19 +687,43 @@ public class ShowHand
 		System.out.println();
 		sh.deliverCard("人工智能");
 		sh.count(2);
-		sh.countwin();
+		try
+		{
+			sh.countwin();
+		}
+		catch (Exception e)
+		{
+			System.out.println("用户输入不合法，游戏结束");
+			System.exit(0);
+		}
 		//第3轮发牌
 		System.out.println("--------------------------第3轮发牌--------------------------");
 		System.out.println();
 		sh.fapai();
 		sh.count(3);
-		sh.countwin();
+		try
+		{
+			sh.countwin();
+		}
+		catch (Exception e)
+		{
+			System.out.println("用户输入不合法，游戏结束");
+			System.exit(0);
+		}
 		//第4轮发牌
 		System.out.println("--------------------------第4轮发牌--------------------------");
 		System.out.println();
 		sh.fapai();
 		sh.count(4);
-		sh.countwin();
+		try
+		{
+			sh.countwin();
+		}
+		catch (Exception e)
+		{
+			System.out.println("用户输入不合法，游戏结束");
+			System.exit(0);
+		}
 		//第5轮发牌
 		System.out.println("--------------------------第5轮发牌--------------------------");
 		System.out.println();
